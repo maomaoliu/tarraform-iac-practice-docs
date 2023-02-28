@@ -1,1 +1,1 @@
-# tarraform-iac-practice-docs
+# terraform-iac-practice-docs
