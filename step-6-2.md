@@ -46,9 +46,8 @@ Step 6. GitOps 持续部署
 - 修改应用程序代码，如修改文件 [BookController](../apps/web-app/src/main/java/org/example/looam/web/controller/BookController.java)，添加以下代码
   ```
   @GetMapping("/first-ten")
-  public List<BookDTO> findFirstTen(
-      @RequestParam(required = false) String searchKey) {
-    return bookService.findPage(searchKey, 1, 10).data();
+  public List<BookDTO> findFirstTen() {
+    return bookService.findPage(1, 10).data();
   }
   ```
   执行本地打包脚本
