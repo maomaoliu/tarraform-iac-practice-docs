@@ -81,7 +81,7 @@ $ kubectl port-forward deployment/book-service 8090:8080
 ```
 
 
-#### 打扫战场
+#### 如需清理
 
 ```bash
 $ kubectl delete deployment book-service
